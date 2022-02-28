@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsScreen">
+
+
+    <TextView
+        android:id="@+id/item_details_location_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_details_location_textView"
+        android:textSize="18sp"
+        android:textColor="@color/blackish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_availability_textView" />
+
+    <TextView
+        android:id="@+id/item_details_location_input_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_details_location_input_textView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/item_details_location_textView"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_availability_textView" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNavigationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        app:itemIconTint="@color/menu_item_color"-->
+<!--        app:itemRippleColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:menu="@menu/bottom_menu" />-->
+
+    <ImageView
+        android:id="@+id/item_details_imageView"
+        android:layout_width="315dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/wiertarka" />
+
+    <TextView
+        android:id="@+id/item_details_title_textView"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/item_details_title_textView"
+        android:textAlignment="center"
+        android:textColor="@color/blue_czaj"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_imageView" />
+
+    <Button
+        android:id="@+id/item_details_toList_button"
+        android:layout_width="192dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/item_details_toList_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_location_input_textView" />
+
+    <Button
+        android:id="@+id/item_details_showOnMap_button"
+        android:layout_width="190dp"
+        android:layout_height="53dp"
+        android:text="@string/item_details_showOnMap_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_toList_button" />
+
+    <TextView
+        android:id="@+id/item_details_info_textView"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/item_details_info_textView"
+        android:textSize="16sp"
+        android:textColor="@color/blackish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_title_textView" />
+
+    <TextView
+        android:id="@+id/item_details_price_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_details_price_textView"
+        android:textSize="18sp"
+        android:textColor="@color/blackish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_info_textView" />
+
+    <TextView
+        android:id="@+id/item_details_price_input_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_details_price_input_textView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/item_details_price_textView"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_info_textView" />
+
+    <TextView
+        android:id="@+id/item_details_availability_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_details_availability_textView"
+        android:textSize="18sp"
+        android:textColor="@color/blackish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_price_textView" />
+
+    <TextView
+        android:id="@+id/item_details_availability_input_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/item_details_availability_input_textView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/item_details_availability_textView"
+        app:layout_constraintTop_toBottomOf="@+id/item_details_price_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
