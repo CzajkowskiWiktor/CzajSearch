@@ -51,4 +51,5 @@
     <string name="alert_success_disconnected_button">OK</string>
     <string name="alert_success_diconntected_message">Urządzenie zostało poprawnie odłączone od artykułu</string>
     <string name="item_layout_availability">Dostępność:</string>
+    <string name="popup_item_found_textButton">Rozumiem</string>
 </resources>

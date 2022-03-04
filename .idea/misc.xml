@@ -14,6 +14,7 @@
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/button_background_bottom_view.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/custom_button.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/error_background.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/ic_alert_done.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/ic_home.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/ic_item_location.xml" value="0.1375" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/drawable/image_details_border.xml" value="0.24177631578947367" />
@@ -35,6 +36,7 @@
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/list_items.xml" value="0.12960526315789472" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/loading_dialog.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/main_screen.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/popup_item_found.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/popup_map_layout.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/Mczaja/AndroidStudioProjects/CzajSearch/app/src/main/res/layout/toolbar.xml" value="0.33" />

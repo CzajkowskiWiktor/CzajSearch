@@ -52,6 +52,7 @@ public class ItemDetailsScreen extends AppCompatActivity {
     private boolean itemConnected = false;
 
     Dialog mDialog;
+    Dialog iDialog;
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
     private NotificationChannel channel;
@@ -147,6 +148,7 @@ public class ItemDetailsScreen extends AppCompatActivity {
         }
 
         mDialog = new Dialog(ItemDetailsScreen.this);
+        iDialog = new Dialog(ItemDetailsScreen.this);
 
         // show
         mapBtn.setOnClickListener(new View.OnClickListener() {
@@ -397,6 +399,55 @@ public class ItemDetailsScreen extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(ItemDetailsScreen.this, R.style.AlertDialogTheme);
         View view = LayoutInflater.from(ItemDetailsScreen.this).inflate(
                 R.layout.alert_success_layout, (ConstraintLayout)findViewById(R.id.alert_success_layoutContainer)
+        );
+        builder.setView(view);
+        ((TextView) view.findViewById(R.id.alert_success_textTitle)).setText(R.string.alert_success_title);
+        ((TextView) view.findViewById(R.id.alert_success_textMessage)).setText(R.string.alert_success_message);
+        ((Button) view.findViewById(R.id.alert_success_buttonAction)).setText(R.string.alert_success_button);
+        ((ImageView) view.findViewById(R.id.alert_success_imageIcon)).setImageResource(R.drawable.ic_alert_done);
+
+        final AlertDialog alertDialog = builder.create();
+
+        view.findViewById(R.id.alert_success_buttonAction).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDialog.dismiss();
+                alertDialog.dismiss();
+
+                //after 5s show popup that item has been found
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        iDialog.setContentView(R.layout.popup_item_found);
+                        iDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                        iDialog.show();
+
+                        Button foundBtn = iDialog.findViewById(R.id.popup_item_found_button);
+
+                        foundBtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                iDialog.dismiss();
+                            }
+                        });
+                    }
+                },5000);
+            }
+        });
+
+        if(alertDialog.getWindow() != null) {
+            alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        }
+        alertDialog.show();
+
+    }
+
+    private void showItemFoundAlertDialog() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(ItemDetailsScreen.this, R.style.AlertDialogTheme);
+        View view = LayoutInflater.from(ItemDetailsScreen.this).inflate(
+                R.layout.popup_item_found, (ConstraintLayout)findViewById(R.id.alert_success_layoutContainer)
         );
         builder.setView(view);
         ((TextView) view.findViewById(R.id.alert_success_textTitle)).setText(R.string.alert_success_title);
