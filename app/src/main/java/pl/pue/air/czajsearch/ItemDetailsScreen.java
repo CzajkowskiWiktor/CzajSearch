@@ -214,6 +214,27 @@ public class ItemDetailsScreen extends AppCompatActivity {
                     if(itemTitle.equals("Coca Cola Zero 1,5l")){
                         imgItem.setImageResource(R.drawable.kerf_layout_cola_zero);
                     }
+                    if(itemTitle.equals("Fanta 250ml")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_fanta);
+                    }
+                    if(itemTitle.equals("Polski Pomidor")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_pomidor);
+                    }
+                    if(itemTitle.equals("Chipsy Lays")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_chipsy);
+                    }
+                    if(itemTitle.equals("Baton Wedel WW")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_baton);
+                    }
+                    if(itemTitle.equals("Tyskie 500ml")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_piwo);
+                    }
+                    if(itemTitle.equals("Płyn do naczyń 1l")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_plyn_naczyn);
+                    }
+                    if(itemTitle.equals("Papier Toaletowy Velvet")){
+                        imgItem.setImageResource(R.drawable.kerf_layout_papier_toaletowy);
+                    }
                 }
                 if(shopName.equals("Biedronka")){
                     if(itemTitle.equals("Pierś z kurczaka")){
@@ -230,6 +251,27 @@ public class ItemDetailsScreen extends AppCompatActivity {
                     }
                     if(itemTitle.equals("Coca Cola Zero 1,5l")){
                         imgItem.setImageResource(R.drawable.biedrona_layout_cola_zero);
+                    }
+                    if(itemTitle.equals("Fanta 250ml")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_fanta);
+                    }
+                    if(itemTitle.equals("Polski Pomidor")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_pomidor);
+                    }
+                    if(itemTitle.equals("Chipsy Lays")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_chipsy);
+                    }
+                    if(itemTitle.equals("Baton Wedel WW")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_baton);
+                    }
+                    if(itemTitle.equals("Tyskie 500ml")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_piwo);
+                    }
+                    if(itemTitle.equals("Płyn do naczyń 1l")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_plyn_naczynia);
+                    }
+                    if(itemTitle.equals("Papier Toaletowy Velvet")){
+                        imgItem.setImageResource(R.drawable.biedrona_layout_papier_toaletowy);
                     }
                 }
 

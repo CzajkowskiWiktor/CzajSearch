@@ -52,7 +52,7 @@ public class FavoritesFragment extends Fragment {
                     11.99f,"Zaprawa Murarska M-5 Rolas, 25kg. Najlepsza na rynku!",
                     "13 sztuk",R.drawable.zaprawa));
         }
-        if(shopName[0].equals("Carrefour") || shopName[0].equals("Biedronka")){
+        if(shopName[0].equals("Carrefour")){
             favItemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
                     5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
                     "70 sztuk",R.drawable.chleb_tostowy));
@@ -62,6 +62,17 @@ public class FavoritesFragment extends Fragment {
             favItemList.add(new Item("Pierś z kurczaka","Dział: 2, Regał: 1",
                     17.99f,"Pierś z kurczaka z Polskiej produkcji. Najwyższa jakość mięsa",
                     "45 sztuk",R.drawable.piers_kurzcak));
+        }
+        if(shopName[0].equals("Biedronka")){
+            favItemList.add(new Item("Tyskie 500ml","Dział: 3, Regał: 2",
+                    3.49f,"Tyskie 500ml, najlepsze Polskie piwo na rynku",
+                    "82 sztuk",R.drawable.piwo));
+            favItemList.add(new Item("Baton Wedel WW","Dział: 14, Regał: 11",
+                    1.99f,"Baton Wedel WW, super czekoladowy i mleczny smak!",
+                    "99 sztuk",R.drawable.baton));
+            favItemList.add(new Item("Chipsy Lays","Dział: 11, Regał: 3",
+                    5.99f,"Chipsy Lays o smaku zielona cebulka, duża paczka 200g",
+                    "33 sztuk",R.drawable.chipsy));
         }
 
         recyclerView.setAdapter(new FavItemAdapter(favItemList,shopName[0]));

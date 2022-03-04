@@ -192,51 +192,116 @@ public class ListFragment extends Fragment {
 
         // grocery shop
         if(shopName[0].equals("Carrefour") || shopName[0].equals("Biedronka")){
-            itemList.add(new Item("Pierś z kurczaka","Dział: 2, Regał: 1",
-                    17.99f,"Pierś z kurczaka z Polskiej produkcji. Najwyższa jakość mięsa",
-                    "45 sztuk",R.drawable.piers_kurzcak));
             itemList.add(new Item("Łaciate Mleko UHT 3,2% 1l","Dział: 3, Regał: 15",
                     3.29f,"Polskie mleko firmy łaciate 3,2% UHT. Opakowanie poddawane recyklingowi",
                     "133 sztuk",R.drawable.mleko));
-            itemList.add(new Item("Olej Kujawski 0,7l","Dział: 7, Regał: 3",
-                    10.99f,"Olej Kujawski 0,7l z pierwszego tłoczenia. Idealny do frytek, produkt Polski",
-                    "31 sztuk",R.drawable.olej));
             itemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
                     5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
                     "70 sztuk",R.drawable.chleb_tostowy));
-            itemList.add(new Item("Coca Cola Zero 1,5l","Dział: 12, Regał: 9",
-                    5.29f,"Coca Cola Zero 1,5l, zero kalorii. Idealna na imprezy towarzyskie i dla osób, które liczą kalorie",
-                    "brak",R.drawable.cola));
+            itemList.add(new Item("Polski Pomidor","Dział: 7, Regał: 3",
+                    19.99f,"Pyszny Polski wiejski pomidor, ręcznie zbierany",
+                    "100 sztuk",R.drawable.pomidor));
             itemList.add(new Item("Pierś z kurczaka","Dział: 2, Regał: 1",
                     17.99f,"Pierś z kurczaka z Polskiej produkcji. Najwyższa jakość mięsa",
                     "45 sztuk",R.drawable.piers_kurzcak));
-            itemList.add(new Item("Łaciate Mleko UHT 3,2% 1l","Dział: 3, Regał: 15",
-                    3.29f,"Polskie mleko firmy łaciate 3,2% UHT. Opakowanie poddawane recyklingowi",
-                    "133 sztuk",R.drawable.mleko));
-            itemList.add(new Item("Olej Kujawski 0,7l","Dział: 7, Regał: 3",
-                    10.99f,"Olej Kujawski 0,7l z pierwszego tłoczenia. Idealny do frytek, produkt Polski",
-                    "31 sztuk",R.drawable.olej));
-            itemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
-                    5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
-                    "70 sztuk",R.drawable.chleb_tostowy));
+            itemList.add(new Item("Chipsy Lays","Dział: 11, Regał: 3",
+                    5.99f,"Chipsy Lays o smaku zielona cebulka, duża paczka 200g",
+                    "33 sztuk",R.drawable.chipsy));
+            itemList.add(new Item("Baton Wedel WW","Dział: 14, Regał: 11",
+                    1.99f,"Baton Wedel WW, super czekoladowy i mleczny smak!",
+                    "99 sztuk",R.drawable.baton));
             itemList.add(new Item("Coca Cola Zero 1,5l","Dział: 12, Regał: 9",
                     5.29f,"Coca Cola Zero 1,5l, zero kalorii. Idealna na imprezy towarzyskie i dla osób, które liczą kalorie",
                     "brak",R.drawable.cola));
+            itemList.add(new Item("Fanta 250ml","Dział: 12, Regał: 7",
+                    2.99f,"Fanta pomarańczowa 250ml, wersja puszkowa",
+                    "35 sztuk",R.drawable.fanta));
+            itemList.add(new Item("Tyskie 500ml","Dział: 3, Regał: 2",
+                    3.49f,"Tyskie 500ml, najlepsze Polskie piwo na rynku",
+                    "82 sztuk",R.drawable.piwo));
+            itemList.add(new Item("Olej Kujawski 0,7l","Dział: 7, Regał: 3",
+                    10.99f,"Olej Kujawski 0,7l z pierwszego tłoczenia. Idealny do frytek, produkt Polski",
+                    "31 sztuk",R.drawable.olej));
+            itemList.add(new Item("Papier Toaletowy Velvet","Dział: 8, Regał: 1",
+                    14.99f,"Aksamitny i delikatny papier toaletowy firmy Velvet",
+                    "50 sztuk",R.drawable.papier_toaletowy));
+            itemList.add(new Item("Płyn do naczyń 1l","Dział: 7, Regał: 8",
+                    8.99f,"Płyn do naczyń 1l Ludwik Premium, idealnie usuwa brud",
+                    "112 sztuk",R.drawable.plyn_naczyn));
+            itemList.add(new Item("Łaciate Mleko UHT 3,2% 1l","Dział: 3, Regał: 15",
+                    3.29f,"Polskie mleko firmy łaciate 3,2% UHT. Opakowanie poddawane recyklingowi",
+                    "133 sztuk",R.drawable.mleko));
+            itemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
+                    5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
+                    "70 sztuk",R.drawable.chleb_tostowy));
+            itemList.add(new Item("Polski Pomidor","Dział: 7, Regał: 3",
+                    19.99f,"Pyszny Polski wiejski pomidor, ręcznie zbierany",
+                    "100 sztuk",R.drawable.pomidor));
             itemList.add(new Item("Pierś z kurczaka","Dział: 2, Regał: 1",
                     17.99f,"Pierś z kurczaka z Polskiej produkcji. Najwyższa jakość mięsa",
                     "45 sztuk",R.drawable.piers_kurzcak));
-            itemList.add(new Item("Łaciate Mleko UHT 3,2% 1l","Dział: 3, Regał: 15",
-                    3.29f,"Polskie mleko firmy łaciate 3,2% UHT. Opakowanie poddawane recyklingowi",
-                    "133 sztuk",R.drawable.mleko));
-            itemList.add(new Item("Olej Kujawski 0,7l","Dział: 7, Regał: 3",
-                    10.99f,"Olej Kujawski 0,7l z pierwszego tłoczenia. Idealny do frytek, produkt Polski",
-                    "31 sztuk",R.drawable.olej));
-            itemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
-                    5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
-                    "70 sztuk",R.drawable.chleb_tostowy));
+            itemList.add(new Item("Chipsy Lays","Dział: 11, Regał: 3",
+                    5.99f,"Chipsy Lays o smaku zielona cebulka, duża paczka 200g",
+                    "33 sztuk",R.drawable.chipsy));
+            itemList.add(new Item("Baton Wedel WW","Dział: 14, Regał: 11",
+                    1.99f,"Baton Wedel WW, super czekoladowy i mleczny smak!",
+                    "99 sztuk",R.drawable.baton));
             itemList.add(new Item("Coca Cola Zero 1,5l","Dział: 12, Regał: 9",
                     5.29f,"Coca Cola Zero 1,5l, zero kalorii. Idealna na imprezy towarzyskie i dla osób, które liczą kalorie",
                     "brak",R.drawable.cola));
+            itemList.add(new Item("Fanta 250ml","Dział: 12, Regał: 7",
+                    2.99f,"Fanta pomarańczowa 250ml, wersja puszkowa",
+                    "35 sztuk",R.drawable.fanta));
+            itemList.add(new Item("Tyskie 500ml","Dział: 3, Regał: 2",
+                    3.49f,"Tyskie 500ml, najlepsze Polskie piwo na rynku",
+                    "82 sztuk",R.drawable.piwo));
+            itemList.add(new Item("Olej Kujawski 0,7l","Dział: 7, Regał: 3",
+                    10.99f,"Olej Kujawski 0,7l z pierwszego tłoczenia. Idealny do frytek, produkt Polski",
+                    "31 sztuk",R.drawable.olej));
+            itemList.add(new Item("Papier Toaletowy Velvet","Dział: 8, Regał: 1",
+                    14.99f,"Aksamitny i delikatny papier toaletowy firmy Velvet",
+                    "50 sztuk",R.drawable.papier_toaletowy));
+            itemList.add(new Item("Płyn do naczyń 1l","Dział: 7, Regał: 8",
+                    8.99f,"Płyn do naczyń 1l Ludwik Premium, idealnie usuwa brud",
+                    "112 sztuk",R.drawable.plyn_naczyn));
+            itemList.add(new Item("Łaciate Mleko UHT 3,2% 1l","Dział: 3, Regał: 15",
+                    3.29f,"Polskie mleko firmy łaciate 3,2% UHT. Opakowanie poddawane recyklingowi",
+                    "133 sztuk",R.drawable.mleko));
+            itemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
+                    5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
+                    "70 sztuk",R.drawable.chleb_tostowy));
+            itemList.add(new Item("Polski Pomidor","Dział: 7, Regał: 3",
+                    19.99f,"Pyszny Polski wiejski pomidor, ręcznie zbierany",
+                    "100 sztuk",R.drawable.pomidor));
+            itemList.add(new Item("Pierś z kurczaka","Dział: 2, Regał: 1",
+                    17.99f,"Pierś z kurczaka z Polskiej produkcji. Najwyższa jakość mięsa",
+                    "45 sztuk",R.drawable.piers_kurzcak));
+            itemList.add(new Item("Chipsy Lays","Dział: 11, Regał: 3",
+                    5.99f,"Chipsy Lays o smaku zielona cebulka, duża paczka 200g",
+                    "33 sztuk",R.drawable.chipsy));
+            itemList.add(new Item("Baton Wedel WW","Dział: 14, Regał: 11",
+                    1.99f,"Baton Wedel WW, super czekoladowy i mleczny smak!",
+                    "99 sztuk",R.drawable.baton));
+            itemList.add(new Item("Coca Cola Zero 1,5l","Dział: 12, Regał: 9",
+                    5.29f,"Coca Cola Zero 1,5l, zero kalorii. Idealna na imprezy towarzyskie i dla osób, które liczą kalorie",
+                    "brak",R.drawable.cola));
+            itemList.add(new Item("Fanta 250ml","Dział: 12, Regał: 7",
+                    2.99f,"Fanta pomarańczowa 250ml, wersja puszkowa",
+                    "35 sztuk",R.drawable.fanta));
+            itemList.add(new Item("Tyskie 500ml","Dział: 3, Regał: 2",
+                    3.49f,"Tyskie 500ml, najlepsze Polskie piwo na rynku",
+                    "82 sztuk",R.drawable.piwo));
+            itemList.add(new Item("Olej Kujawski 0,7l","Dział: 7, Regał: 3",
+                    10.99f,"Olej Kujawski 0,7l z pierwszego tłoczenia. Idealny do frytek, produkt Polski",
+                    "31 sztuk",R.drawable.olej));
+            itemList.add(new Item("Papier Toaletowy Velvet","Dział: 8, Regał: 1",
+                    14.99f,"Aksamitny i delikatny papier toaletowy firmy Velvet",
+                    "50 sztuk",R.drawable.papier_toaletowy));
+            itemList.add(new Item("Płyn do naczyń 1l","Dział: 7, Regał: 8",
+                    8.99f,"Płyn do naczyń 1l Ludwik Premium, idealnie usuwa brud",
+                    "112 sztuk",R.drawable.plyn_naczyn));
+
+
         }
 
 
