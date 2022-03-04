@@ -73,10 +73,52 @@ public class ListFragment extends Fragment {
 
         //Add data to item list
         // hardware shop
-        if(shopName[0].equals("Lerla Merlyn") || shopName[0].equals("Kastorama") || shopName[0].equals("Obi")){
+        if(shopName[0].equals("Leroy Merlin") || shopName[0].equals("Castorama") || shopName[0].equals("Obi")){
+            itemList.add(new Item("Taśma LED SUPER SLIM 4mm","Dział: 2, Regał: 14",
+                    64.99f,"Taśma LED SUPER SLIM 4mm, moc 12W/m, 120diód/m barwa ZIMNA, długośc rolki to 5m",
+                    "67 sztuk",R.drawable.tasma_led));
             itemList.add(new Item("Klucz 14\"","Dział: 13, Regał: 5",
                     24.99f,"Klucz uniwersalny 14 cali do roznego zastosowania",
                     "150 sztuk",R.drawable.item_image));
+            itemList.add(new Item("Zaprawa Murarska M-5","Dział: 12, Regał: 1",
+                    11.99f,"Zaprawa Murarska M-5 Rolas, 25kg. Najlepsza na rynku!",
+                    "56 sztuk",R.drawable.zaprawa));
+            itemList.add(new Item("Wiertarka udarowa BOSH","Dział: 5, Regał: 15",
+                    399.99f,"Wiertarka udarowa BOSH 550W GSB",
+                    "13 sztuk",R.drawable.wiertarka));
+            itemList.add(new Item("Młotek","Dział: 7, Regał: 1",
+                    55.50f,"Młotek uniwersalny - średni",
+                    "brak",R.drawable.mlotek));
+            itemList.add(new Item("Farba biała Delux","Dział: 21, Regał: 2",
+                    72.99f,"Farba biała Delux - idealna do pokoju",
+                    "70 sztuk",R.drawable.farba));
+            itemList.add(new Item("Taśma LED SUPER SLIM 4mm","Dział: 2, Regał: 14",
+                    64.99f,"Taśma LED SUPER SLIM 4mm, moc 12W/m, 120diód/m barwa ZIMNA, długośc rolki to 5m",
+                    "67 sztuk",R.drawable.tasma_led));
+            itemList.add(new Item("Klucz 14\"","Dział: 13, Regał: 5",
+                    24.99f,"Klucz uniwersalny 14 cali do roznego zastosowania",
+                    "150 sztuk",R.drawable.item_image));
+            itemList.add(new Item("Zaprawa Murarska M-5","Dział: 12, Regał: 1",
+                    11.99f,"Zaprawa Murarska M-5 Rolas, 25kg. Najlepsza na rynku!",
+                    "56 sztuk",R.drawable.zaprawa));
+            itemList.add(new Item("Wiertarka udarowa BOSH","Dział: 5, Regał: 15",
+                    399.99f,"Wiertarka udarowa BOSH 550W GSB",
+                    "13 sztuk",R.drawable.wiertarka));
+            itemList.add(new Item("Młotek","Dział: 7, Regał: 1",
+                    55.50f,"Młotek uniwersalny - średni",
+                    "brak",R.drawable.mlotek));
+            itemList.add(new Item("Farba biała Delux","Dział: 21, Regał: 2",
+                    72.99f,"Farba biała Delux - idealna do pokoju",
+                    "70 sztuk",R.drawable.farba));
+            itemList.add(new Item("Taśma LED SUPER SLIM 4mm","Dział: 2, Regał: 14",
+                    64.99f,"Taśma LED SUPER SLIM 4mm, moc 12W/m, 120diód/m barwa ZIMNA, długośc rolki to 5m",
+                    "67 sztuk",R.drawable.tasma_led));
+            itemList.add(new Item("Klucz 14\"","Dział: 13, Regał: 5",
+                    24.99f,"Klucz uniwersalny 14 cali do roznego zastosowania",
+                    "150 sztuk",R.drawable.item_image));
+            itemList.add(new Item("Zaprawa Murarska M-5","Dział: 12, Regał: 1",
+                    11.99f,"Zaprawa Murarska M-5 Rolas, 25kg. Najlepsza na rynku!",
+                    "56 sztuk",R.drawable.zaprawa));
             itemList.add(new Item("Wiertarka udarowa BOSH","Dział: 5, Regał: 15",
                     399.99f,"Wiertarka udarowa BOSH 550W GSB",
                     "13 sztuk",R.drawable.wiertarka));
@@ -149,7 +191,7 @@ public class ListFragment extends Fragment {
         }
 
         // grocery shop
-        if(shopName[0].equals("Kerfur") || shopName[0].equals("Biedrona")){
+        if(shopName[0].equals("Carrefour") || shopName[0].equals("Biedronka")){
             itemList.add(new Item("Pierś z kurczaka","Dział: 2, Regał: 1",
                     17.99f,"Pierś z kurczaka z Polskiej produkcji. Najwyższa jakość mięsa",
                     "45 sztuk",R.drawable.piers_kurzcak));

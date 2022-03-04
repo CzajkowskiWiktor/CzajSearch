@@ -38,18 +38,21 @@ public class FavoritesFragment extends Fragment {
         shopNameString = shopName[0];
 
         // init data to favorites
-        if(shopName[0].equals("Lerla Merlyn") || shopName[0].equals("Kastorama") || shopName[0].equals("Obi")){
+        if(shopName[0].equals("Leroy Merlin") || shopName[0].equals("Castorama") || shopName[0].equals("Obi")){
             favItemList.add(new Item("Farba biała Delux","Dział: 21, Regał: 2",
                     72.99f,"Farba biała Delux - idealna do pokoju",
                     "70 sztuk",R.drawable.farba));
-            favItemList.add(new Item("Młotek","Dział: 7, Regał: 1",
-                    55.50f,"Młotek uniwersalny - średni",
-                    "brak",R.drawable.mlotek));
+            favItemList.add(new Item("Taśma LED SUPER SLIM 4mm","Dział: 2, Regał: 14",
+                    64.99f,"Taśma LED SUPER SLIM 4mm, moc 12W/m, 120diód/m barwa ZIMNA, długośc rolki to 5m",
+                    "67 sztuk",R.drawable.tasma_led));
             favItemList.add(new Item("Wiertarka udarowa BOSH","Dział: 5, Regał: 15",
                     399.99f,"Wiertarka udarowa BOSH 550W GSB",
                     "13 sztuk",R.drawable.wiertarka));
+            favItemList.add(new Item("Zaprawa Murarska M-5","Dział: 12, Regał: 1",
+                    11.99f,"Zaprawa Murarska M-5 Rolas, 25kg. Najlepsza na rynku!",
+                    "13 sztuk",R.drawable.zaprawa));
         }
-        if(shopName[0].equals("Kerfur") || shopName[0].equals("Biedrona")){
+        if(shopName[0].equals("Carrefour") || shopName[0].equals("Biedronka")){
             favItemList.add(new Item("Chleb Tostowy Schulstad","Dział: 15, Regał: 7",
                     5.29f,"Chleb Tostowy Schulstad 700g, chleb tostowy pełnoziarnisty",
                     "70 sztuk",R.drawable.chleb_tostowy));

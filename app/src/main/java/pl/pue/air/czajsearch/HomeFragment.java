@@ -35,19 +35,19 @@ public class HomeFragment extends Fragment {
 
         // setting appropriate shop MAP
         shopMap = view.findViewById(R.id.shopMapView);
-        if(shopName[0].equals("Lerla Merlyn")){
+        if(shopName[0].equals("Leroy Merlin")){
             shopMap.setImageResource(R.drawable.leroy_layout);
         }
-        if(shopName[0].equals("Kastorama")){
+        if(shopName[0].equals("Castorama")){
             shopMap.setImageResource(R.drawable.kastorama_layout);
         }
         if(shopName[0].equals("Obi")){
             shopMap.setImageResource(R.drawable.obi_layout);
         }
-        if(shopName[0].equals("Kerfur")){
+        if(shopName[0].equals("Carrefour")){
             shopMap.setImageResource(R.drawable.kerf_layout);
         }
-        if(shopName[0].equals("Biedrona")){
+        if(shopName[0].equals("Biedronka")){
             shopMap.setImageResource(R.drawable.biedrona_layout);
         }
 

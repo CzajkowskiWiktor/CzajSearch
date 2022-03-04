@@ -184,7 +184,7 @@ public class FavItemAdapter extends RecyclerView.Adapter<FavItemAdapter.ItemView
 
 
                     //set correct image
-                    if(shopName.equals("Lerla Merlyn")){
+                    if(shopName.equals("Leroy Merlin")){
                         if(title.equals("Klucz 14\"")){
                             imgItem.setImageResource(R.drawable.leroy_plan_klucz);
                         }
@@ -198,14 +198,14 @@ public class FavItemAdapter extends RecyclerView.Adapter<FavItemAdapter.ItemView
                             Log.d("TAG", "onClick: "+shopName);
                             imgItem.setImageResource(R.drawable.leroy_plan_farba);
                         }
-                        if(title.equals("Pasek LED 5m Neutralny")){
+                        if(title.equals("Taśma LED SUPER SLIM 4mm")){
                             imgItem.setImageResource(R.drawable.leroy_plan_oswietlenie);
                         }
-                        if(title.equals("Zaprawa 10Kg Budimex")){
+                        if(title.equals("Zaprawa Murarska M-5")){
                             imgItem.setImageResource(R.drawable.leroy_plan_budowlany);
                         }
                     }
-                    if(shopName.equals("Kastorama")){
+                    if(shopName.equals("Castorama")){
                         if(title.equals("Klucz 14\"")){
                             imgItem.setImageResource(R.drawable.kastorama_layout_klucz);
                         }
@@ -218,14 +218,14 @@ public class FavItemAdapter extends RecyclerView.Adapter<FavItemAdapter.ItemView
                         if(title.equals("Farba biała Delux")){
                             imgItem.setImageResource(R.drawable.kastorama_layout_farba);
                         }
-                        if(title.equals("Pasek LED 5m Neutralny")){
+                        if(title.equals("Taśma LED SUPER SLIM 4mm")){
                             imgItem.setImageResource(R.drawable.kastorama_layout_oswietlenie);
                         }
-                        if(title.equals("Zaprawa 10Kg Budimex")){
-                            imgItem.setImageResource(R.drawable.kastorama_layout_budowlany);
+                        if(title.equals("Zaprawa Murarska M-5")){
+                            imgItem.setImageResource(R.drawable.leroy_plan_budowlany);
                         }
                     }
-                    if(shopName.equals("Kerfur")){
+                    if(shopName.equals("Carrefour")){
                         if(title.equals("Pierś z kurczaka")){
                             imgItem.setImageResource(R.drawable.kerf_layout_piers);
                         }
@@ -242,7 +242,7 @@ public class FavItemAdapter extends RecyclerView.Adapter<FavItemAdapter.ItemView
                             imgItem.setImageResource(R.drawable.kerf_layout_cola_zero);
                         }
                     }
-                    if(shopName.equals("Biedrona")){
+                    if(shopName.equals("Biedronka")){
                         if(title.equals("Pierś z kurczaka")){
                             imgItem.setImageResource(R.drawable.biedrona_layout_piers);
                         }

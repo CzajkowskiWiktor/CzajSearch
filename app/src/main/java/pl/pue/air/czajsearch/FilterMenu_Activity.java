@@ -27,25 +27,25 @@ public class FilterMenu_Activity extends AppCompatActivity {
 
     // DATA
     String[] cities = {"Poznań", "Warszawa", "Wrocław", "Gdańsk"};
-    String[] shopsWar = {"Lerla Merlyn, ul. Malborska 31a", "Lerla Merlyn, al. Jerozolimskie 255","Lerla Merlyn, ul. Ostrobramska 12","Lerla Merlyn, ul. Modlińska 9",
-            "Kastorama, Aleja Krakowska 15", "Kastorama, ul. Popularna 1", "Kastorama, ul. Grochowska 51", "Kastorama, ul. Krakowiaków 12",
-            "Kerfur, ul. Wołoska 63c", "Kerfur, al. Jerozolimskie 14", "Kerfur, ul. Złota 55", "Kerfur, ul. Targowa 11",
-            "Biedrona, ul. Nowy Świat 3", "Biedrona, ul. Pruszowska 21",
-            "Biedrona, ul. Grzybowska 11", "Biedrona, ul. Dzika 1","Biedrona, al. Jerozolimskie 55",
-            "Biedrona, ul. Żelazna 21","Biedrona, ul. Puławska 111a"};
-    String[] shopsPzn = {"Lerla Merlyn, ul. Pleszewska 11", "Lerla Merlyn, ul. Głogowska 3",
-            "Kastorama, ul. Murawa 12","Kastorama, ul. Konopnickiej 22", "Kerfur, ul. Pleszewska 11",
-            "Kerfur, ul. Zamenhofa 122","Kerfur, ul. Nowogrodzka 11/12", "Biedrona, ul. Polanka 33", "Biedrona, ul. Bobrzańska 21",
-            "Biedrona, plac Wiosny Ludów 1", "Biedrona, ul. Niemca 1"};
-    String[] shopsWro = {"Lerla Merlyn, ul. Krakowska 51", "Lerla Merlyn, ul. Graniczna 4",
-            "Lerla Merlyn, ul. Tyska 16","Kastorama, ul. Krzywoustego 126","Kastorama, ul. Graniczna 2a",
-            "Kastorama, ul. Legnicka 58", "Kerfur, ul. Gen. Hallera 52","Kerfur, ul. Graniczna 2a",
-            "Kerfur, ul. Dominikańska 3", "Biedrona, ul. Piłsudskiego 3", "Biedrona, ul. Krakowska 21",
-            "Biedrona, ul. Krawiecka 3a", "Biedrona, ul. Szybka 2/5"};
-    String[] shopsGda = {"Lerla Merlyn, ul. Szczęśliwa 7", "Lerla Merlyn, aleja Grunwaldzka 31",
-            "Kastorama, ul. Odyseusza 2", "Kerfur, ul. Kołobrzeska 55",
-            "Kerfur, ul. Schuberta 12a", "Kerfur, ul. Przywidzka 6", "Biedrona, ul. Rajska 6",
-            "Biedrona, ul. Długie Ogrody 15", "Biedrona, ul. Kartuska 26", "Biedrona, ul. Karmelicka 1"};
+    String[] shopsWar = {"Leroy Merlin, ul. Malborska 31a", "Leroy Merlin, al. Jerozolimskie 255","Leroy Merlin, ul. Ostrobramska 12","Leroy Merlin, ul. Modlińska 9",
+            "Castorama, Aleja Krakowska 15", "Castorama, ul. Popularna 1", "Castorama, ul. Grochowska 51", "Castorama, ul. Krakowiaków 12",
+            "Carrefour, ul. Wołoska 63c", "Carrefour, al. Jerozolimskie 14", "Carrefour, ul. Złota 55", "Carrefour, ul. Targowa 11",
+            "Biedronka, ul. Nowy Świat 3", "Biedronka, ul. Pruszowska 21",
+            "Biedronka, ul. Grzybowska 11", "Biedronka, ul. Dzika 1","Biedronka, al. Jerozolimskie 55",
+            "Biedronka, ul. Żelazna 21","Biedronka, ul. Puławska 111a"};
+    String[] shopsPzn = {"Leroy Merlin, ul. Pleszewska 11", "Leroy Merlin, ul. Głogowska 3",
+            "Castorama, ul. Murawa 12","Castorama, ul. Konopnickiej 22", "Carrefour, ul. Pleszewska 11",
+            "Carrefour, ul. Zamenhofa 122","Carrefour, ul. Nowogrodzka 11/12", "Biedronka, ul. Polanka 33", "Biedronka, ul. Bobrzańska 21",
+            "Biedronka, plac Wiosny Ludów 1", "Biedronka, ul. Niemca 1"};
+    String[] shopsWro = {"Leroy Merlin, ul. Krakowska 51", "Leroy Merlin, ul. Graniczna 4",
+            "Leroy Merlin, ul. Tyska 16","Castorama, ul. Krzywoustego 126","Castorama, ul. Graniczna 2a",
+            "Castorama, ul. Legnicka 58", "Carrefour, ul. Gen. Hallera 52","Carrefour, ul. Graniczna 2a",
+            "Carrefour, ul. Dominikańska 3", "Biedronka, ul. Piłsudskiego 3", "Biedronka, ul. Krakowska 21",
+            "Biedronka, ul. Krawiecka 3a", "Biedronka, ul. Szybka 2/5"};
+    String[] shopsGda = {"Leroy Merlin, ul. Szczęśliwa 7", "Leroy Merlin, aleja Grunwaldzka 31",
+            "Castorama, ul. Odyseusza 2", "Carrefour, ul. Kołobrzeska 55",
+            "Carrefour, ul. Schuberta 12a", "Carrefour, ul. Przywidzka 6", "Biedronka, ul. Rajska 6",
+            "Biedronka, ul. Długie Ogrody 15", "Biedronka, ul. Kartuska 26", "Biedronka, ul. Karmelicka 1"};
 
     // Init textViews
     AutoCompleteTextView filterCityInputAutocomplete;
