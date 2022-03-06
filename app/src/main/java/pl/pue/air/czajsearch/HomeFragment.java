@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -14,11 +16,19 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import uk.co.senab.photoview.PhotoViewAttacher;
+
 
 public class HomeFragment extends Fragment {
 
     Animation shopAnimation;
     ImageView shopMap;
+
+    PhotoViewAttacher pAttacher;
+
+    //to scale image
+    private ScaleGestureDetector scaleGestureDetector;
+    private float FACTOR = 1.0f;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,8 +40,6 @@ public class HomeFragment extends Fragment {
         String city = this.getArguments().getString("city");
         String shop = this.getArguments().getString("shop");
         String[] shopName = shop.split(",");
-//        Log.d("TAG", "onCreateView: city - "+city);
-//        Log.d("TAG", "onCreateView: shop - "+shopName[0]);
 
         // setting appropriate shop MAP
         shopMap = view.findViewById(R.id.shopMapView);
@@ -50,6 +58,10 @@ public class HomeFragment extends Fragment {
         if(shopName[0].equals("Biedronka")){
             shopMap.setImageResource(R.drawable.biedrona_layout);
         }
+
+        // zoom map image
+        pAttacher = new PhotoViewAttacher(shopMap);
+        pAttacher.update();
 
 
         //Animation

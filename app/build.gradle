@@ -49,5 +49,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.0-alpha02'
     //Rounded imageView
     implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.commit451:PhotoView:1.2.4'
+
 
 }
