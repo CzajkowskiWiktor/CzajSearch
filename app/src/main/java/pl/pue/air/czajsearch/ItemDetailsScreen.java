@@ -173,7 +173,7 @@ public class ItemDetailsScreen extends AppCompatActivity {
                     if(itemTitle.equals("Farba biała Delux")){
                         imgItem.setImageResource(R.drawable.leroy_plan_farba);
                     }
-                    if(itemTitle.equals("Taśma LED SUPER SLIM 4mmy")){
+                    if(itemTitle.equals("Taśma LED SUPER SLIM 4mm")){
                         imgItem.setImageResource(R.drawable.leroy_plan_oswietlenie);
                     }
                     if(itemTitle.equals("Zaprawa Murarska M-5")){
